@@ -5,12 +5,12 @@ Archivo JSON usado: Data_Recipes.json
 
 # Enunciados
 
-#1Lista el nombre de las cartas de rareza legendaria.
+#1 Lista de los autores de las recetas.
 
-#2 Lista cada rareza y el numero de cartas de cada rareza.
+#2 Contar el número de recetas por autor.
 
-#3 Muestra todas las cartas y la url de la imagen de las cartas que contengan una subcadena pedida por teclado. Por ejemplo, duendes (goblin).
+#3 Pide por teclado dos valores y muestre las recetas que tengan un tiempo de cocina dentro de ese rango de valores pedidos.
 
-#4 Pide por teclado una carta y muestra los datos de la carta y la rareza a la que pertenece.
+#4 Pide por teclado un ingrediente y muestra el nombre de las recetas que contengan ese ingrediente y su autor.
 
-#5 Crea una función que sea un adivina la carta. Se elegirá una carta aleatoria. Primero el usuario deberá adivinar el coste de elixir y después el nivel máximo. Una vez esto deberá adivinar el nombre de la carta. Cada vez que falle en el nombre, se irá revelando una letra del nombre. Perderá si el nombre aparece entero antes de que adivine la carta.
+#5 Pide una receta por teclado y muestra la foto, los ingredientes. Tras esto se muestran los pasos de la receta. Por cada paso, se muestra un menú que de estas opciones: 1.Siguiente paso de la receta, 2.Volver a mostrar los ingredientes, 3. Salir.
