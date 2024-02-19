@@ -30,7 +30,7 @@ def CuentaRecetas(datos):
             print(f"{autor}:{contador} recetas.")
 
 def RangoCookTime(datos):
-    print("Pong dos valores para ver las recetas que tengan un tiempo de cocina dentro del rango introducido.")
+    print("Ponga dos valores para ver las recetas que tengan un tiempo de cocina dentro del rango introducido.")
     print()
     valor1=CompruebaValor1()
     valor2=CompruebaValor2()
