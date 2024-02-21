@@ -40,10 +40,10 @@ def RangoCookTime(datos):
         valor2=CompruebaValor2()
     print()
     verificador=False
+    print(f"Receta\tTiempo de preparación")
     for receta in datos:
         if receta["cook_time"] >= valor1 and receta["cook_time"] <= valor2:
-            print("Receta:",receta["name"])
-            print("Tiempo de preparación:",receta["cook_time"])
+            print(f"{receta["name"]}\t{receta["cook_time"]}")
             print()
             verificador=True
     if not verificador:
