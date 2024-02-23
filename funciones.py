@@ -39,16 +39,20 @@ def RangoCookTime(datos):
         valor1=CompruebaValor1()
         valor2=CompruebaValor2()
     print()
+    recetas=[]
+    tiempos=[]
     verificador=False
-    print(f"Receta\tTiempo de preparación")
     for receta in datos:
         if receta["cook_time"] >= valor1 and receta["cook_time"] <= valor2:
-            print(f"{receta["name"]}\t{receta["cook_time"]}")
-            print()
+            recetas.append(receta["name"])
+            tiempos.append(receta["cook_time"])
             verificador=True
     if not verificador:
         print("No se encontraron recetas con dicho rango de tiempo de cocina.")
-    
+    recetaMasLarga=max(recetas,key=len)
+    print("Receta",(len(recetaMasLarga)-6)*"-","Tiempo de preparacion")
+    for receta,tiempo in zip(recetas,tiempos):
+        print(receta,len(receta)*"-",tiempo)
 def CompruebaValor1():
     while True:
         valor1=input("Valor 1: ")
