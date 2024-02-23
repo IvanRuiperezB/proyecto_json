@@ -50,9 +50,11 @@ def RangoCookTime(datos):
     if not verificador:
         print("No se encontraron recetas con dicho rango de tiempo de cocina.")
     recetaMasLarga=max(recetas,key=len)
-    print("Receta",(len(recetaMasLarga)-6)*"-","Tiempo de preparacion")
+    print("Receta"+len(recetaMasLarga)*"-"+"Tiempo de preparación")
+    print()
+    longitud=(len("Receta")+len(recetaMasLarga)+len("Tiempo de preparación"))
     for receta,tiempo in zip(recetas,tiempos):
-        print(receta,len(receta)*"-",tiempo)
+        print(receta+(longitud-len(receta)-len(str(tiempo)))*"-"+str(tiempo))
 def CompruebaValor1():
     while True:
         valor1=input("Valor 1: ")
@@ -156,6 +158,7 @@ def Opciones5(datos,plato,opcion,paso):
     return opcion
 
 def menu():
+    print()
     print('''Menú
         1. Mostrar autores de las recetas.
         2. Contar recetas de cada autor.
