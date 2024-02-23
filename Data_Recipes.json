@@ -83,7 +83,7 @@
 	"name": "Arroz con pollo Peruano",
 	"description": "Este es uno de los platos favoritos en las mesas peruanas, ya sea con pato –tradicional en el norte del Perú- o con pollo. Es delicioso y tiene muchas variaciones. El arroz puede hacerse graneado o como un risotto y, aunque es verde y tiene bastante cilantro su sabor es bastante sutil. Pueden agregar otros vegetales, si desean.",
 	"preparation_time": 15.0,
-	"cook_time": 45.0,
+	"cook_time": 45,
 	"servings": 4.0,
 	"ingredients": [
 		{

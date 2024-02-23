@@ -16,6 +16,7 @@ def CuentaRecetas(datos):
     print("Número de recetas de cada autor.")
     print()
     autores=[]
+    numrecetas=[]
     for receta in datos:
         if receta["author"] not in autores:
             autores.append(receta["author"])
@@ -24,10 +25,13 @@ def CuentaRecetas(datos):
         for receta in datos:
             if autor == receta["author"]:
                 contador+=1
-        if contador == 1:
-            print(f"{autor}:{contador} receta.")
-        else:
-            print(f"{autor}:{contador} recetas.")
+        numrecetas.append(contador)
+    autorMasLargo=max(autores,key=len)
+    print("Autor"+len(autorMasLargo)*"-"+"Recetas")
+    print()
+    longitud=(len("Autor")+len(autorMasLargo)+len("Recetas"))
+    for autor,numero in zip(autores,numrecetas):
+        print(autor+(longitud-len(autor)-len(str(numero)))*"-"+str(numero))
 
 def RangoCookTime(datos):
     print("Ponga dos valores para ver las recetas que tengan un tiempo de cocina dentro del rango introducido.")
